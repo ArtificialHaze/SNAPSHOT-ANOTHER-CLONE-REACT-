@@ -1,0 +1,256 @@
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+
+/* GLOBAL */
+
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #fefc01;
+  height: 100vh;
+}
+
+.app__body {
+  /* PULL PHONE IMAGE */
+  background: url("") no-repeat center;
+  background-size: contain;
+  height: 400px;
+  width: 250px;
+  padding: 74px;
+}
+
+.app__logo {
+  object-fit: contain;
+  height: 100px;
+}
+
+.app__bodyBackground {
+  background-color: #fff;
+  height: 400px;
+}
+
+/* WEBCAM */
+
+.webcamCapture {
+  position: relative;
+}
+
+.webcamCapture__button {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  color: #fff;
+}
+
+/* PREVIEW */
+
+.preview {
+  position: relative;
+}
+
+.preview__close {
+  position: absolute;
+  top: 0;
+  margin: 5px;
+  cursor: pointer;
+  color: #fff;
+}
+
+.preview__toolbarRight {
+  position: absolute;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  margin: 5px;
+}
+
+.preview__toolbarRight > .MuiSvgIcon-root {
+  font-size: 20px !important;
+  margin-bottom: 8px;
+  cursor: pointer;
+}
+
+.preview__footer {
+  position: absolute;
+  bottom: 0;
+  right: -25px;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: yellow;
+  color: black;
+  border-radius: 30px;
+  padding: 7px;
+  cursor: pointer;
+}
+
+.preview__footer > h2 {
+  font-size: 8px;
+  margin-right: 3px;
+}
+
+.preview__sendIcon {
+  font-size: 10px !important;
+}
+
+/* CHATS */
+
+.chats {
+  position: relative;
+  height: 400px;
+  width: 250px;
+}
+
+.chats__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: #059ee0;
+  height: 50px;
+}
+
+.chats__avatar {
+  height: 25px !important;
+  width: 25px !important;
+}
+
+.chats__search {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  padding-left: 8px;
+}
+
+.chats__search > input::placeholder {
+  color: #fff;
+  opacity: 1;
+}
+
+.chats__search > input {
+  outline: none;
+  background-color: transparent;
+  border: none;
+  font-size: 12px;
+  flex: 1;
+  color: #fff;
+}
+
+.chats__posts {
+  box-shadow: 1px -7px 7px -6px rgba(0, 0, 0, 0.45);
+  margin-top: -9px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  overflow: scroll;
+  height: 359px;
+  background-color: #fff;
+}
+
+.chats__posts::-webkit-scrollbar {
+  display: none;
+}
+
+.chats__posts {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* CHAT */
+
+.chat {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px;
+  border-bottom: 1px solid whitesmoke;
+  cursor: pointer;
+}
+
+.chat__readIcon {
+  color: #ed3b55;
+}
+
+.chat__info {
+  padding-left: 5px;
+  flex: 1;
+}
+
+.chat__info > h4 {
+  font-size: 11px;
+  font-weight: 500;
+}
+
+.chat__info > p {
+  font-size: 9px;
+}
+
+.chats__searchIcon {
+  color: #fff !important;
+  font-size: 13px !important;
+}
+
+.chats__chatIcon {
+  color: #fff !important;
+  font-size: 18px !important;
+}
+
+/* VIEW */
+
+.chatView {
+  position: relative;
+}
+
+.chatView > img {
+  cursor: pointer;
+}
+
+.chatView__timer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 10px;
+}
+
+.chats__takePicIcon {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 40px !important;
+  cursor: pointer;
+  background-color: #fff;
+  border-radius: 200px;
+  color: gray;
+}
+
+.chats__takePicIcon:hover {
+  opacity: 0.8;
+}
+
+/* LOGIN */
+
+.login {
+  background-color: #feff00;
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  width: 100%;
+}
+
+.login__container {
+  display: flex;
+  flex-direction: column;
+}
+
+.login__container > img {
+  height: 300px;
+  object-fit: contain;
+}
